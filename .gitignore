@@ -1,0 +1,57 @@
+# Only the demo/ folder is public
+# Everything else: connector source, production backend, docs, scripts, etc. stay private
+
+# Private — Full production backend (not the demo)
+/backend/
+
+# Private — .NET Connector source code
+/connector/
+
+# Private — Architecture, pricing, compliance docs
+/docs/
+/SQUETIKA_*.md
+/pricing_estimate.py
+
+# Private — Internal tools and stubs
+/mock_backend.py
+/simulate_connector.py
+/frontend/
+/test_frontend_api.py
+/_*.py
+/_*.log
+/_*.err
+/squetika_demo.db
+
+# Private — Infrastructure
+/database/
+/nginx/
+/docker-compose.yml
+/docker-compose.dev.yml
+/scripts/
+/Makefile
+/.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+
+# Node
+node_modules/
+demo/frontend/node_modules/
+demo/frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Demo database (auto-created on run)
+demo/backend/demo.db
